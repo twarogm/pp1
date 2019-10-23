@@ -1,0 +1,6 @@
+a = int(input("Wprowadź długość boku a: "))
+b = int(input("Wprowadź długość boku b: "))
+c = int(input("Wprowadź długość boku c: "))
+p=1/2*(a+b+c)
+P=(p*(p-a)*(p-b)*(p-c))**(1/2)
+print(f"Pole trójkąta o podanych bokach wynosi: {P}")
