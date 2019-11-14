@@ -1,7 +1,7 @@
-
 def suma(N):
-    if N>=0:
-        return s+N+suma(N-1)
+    if N == 0:
+        return 0
+    if N>0:
+        return N + suma(N-1)
 
-print(f'Suma liczb naturalnych: {suma(4)}')
-    
+print(suma(500))
