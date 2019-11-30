@@ -10,7 +10,7 @@ with open('employees.csv', newline='') as f:
     print('')
     print('='*80)
     for row in reader:
-        print(f'%-2s %-15s %-15s %-15s %-15s'%(x, row[1], row[0].upper(), row[2], row[3]))
+        print(f'{x:2}   {row[1].upper():14} {row[0].upper():14} {row[2]:14} {row[3]:15}')#(x, row[1], row[0].upper(), row[2], row[3]))
         x += 1
         wiek.append(int(row[2]))
     print(f'Średnia wieku: ', end ='')
